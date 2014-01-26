@@ -168,9 +168,9 @@ fi
     export_env_dir $env_dir
   fi
 
-  status "Installing dependencies"
+  #status "Installing dependencies"
   # Make npm output to STDOUT instead of its default STDERR
-  npm install --userconfig $build_dir/.npmrc --production 2>&1 | indent
+  #npm install --userconfig $build_dir/.npmrc --production 2>&1 | indent
 )
 
 # Persist goodies like node-version in the slug
