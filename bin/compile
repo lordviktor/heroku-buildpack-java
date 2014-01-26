@@ -242,6 +242,15 @@ if [ ! -e $build_dir/Procfile ]; then
   fi
 fi
 
+status "Installing Bower..."
+npm -g install bower
+
+status "Installing Grunt..."
+npm -g install grunt-cli
+
+status "Installing Grunt..."
+npm -g install karma
+
 # Update the PATH
 status "Building runtime environment"
 mkdir -p $build_dir/.profile.d
